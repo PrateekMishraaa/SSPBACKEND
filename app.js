@@ -12,7 +12,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: ["http://localhost:5000", "https://sspform.vercel.app"],
+  origin: ["https://sspbackend-fcnj.onrender.com/", "https://sspform.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
