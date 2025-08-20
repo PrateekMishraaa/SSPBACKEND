@@ -11,8 +11,12 @@ const registration  = require("./routes/registratration.js")
 dotenv.config();
 
 const app = express();
+app.use(cors({
+  origin: ["http://localhost:5000", "https://sspform.vercel.app"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
-app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static('uploads')); 
