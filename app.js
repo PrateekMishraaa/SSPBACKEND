@@ -33,6 +33,11 @@ app.use('/api/auth', authRoutes);
 app.use("/",registration);
 app.use("/api/upload", uploadRoutes);
 
+app.get("/",(req,res)=>{
+  console.log("hello world")
+  res.send("Hello world")
+})
+
 // ✅ Add this for Render
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
