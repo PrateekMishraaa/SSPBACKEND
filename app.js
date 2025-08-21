@@ -12,7 +12,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: ["https://sspbackend-fcnj.onrender.com/", "https://sspform.vercel.app"],
+  origin: ["https://sspbackend-fcnj.onrender.com/registration", "https://sspform.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
