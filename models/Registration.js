@@ -691,4 +691,4 @@ registrationSchema.index(
   }
 );
 
-module.exports = mongoose.model("Registration", registrationSchema);
+module.exports = mongoose.model("registrations", registrationSchema);
